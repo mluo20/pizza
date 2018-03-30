@@ -5,6 +5,6 @@
     "../scss/template.scss",
     "../scss/_palette.scss"
   ],
-  "mappings": "ACAA,8EAA8E;AAE9E,SAAS;AAOT,SAAS;ADRT,OAAO,CAAC,qEAAI;;AAIZ,AAAA,IAAI,CAAC;EACD,WAAW,EAHR,+BAA+B,GAIrC",
+  "mappings": "ACAA,8EAA8E;AAE9E,SAAS;AAOT,SAAS;ADRT,OAAO,CAAC,qEAAI;;AAIZ,AAAA,IAAI,CAAC;EACD,WAAW,EAHR,MAAM,EAAE,SAAS,EAAE,UAAU,GAInC",
   "names": []
 }
