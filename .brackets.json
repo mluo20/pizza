@@ -7,7 +7,7 @@
                 "outputDir": "../css/",
                 "output": "style.css",
                 "includePaths": [],
-                "sourceComments": true,
+                "sourceComments": false,
                 "outputStyle": "nested"
             }
         }

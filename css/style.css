@@ -2,9 +2,15 @@
 /* HSL */
 /* RGB */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
-/* line 6, /Users/Miranda/Desktop/Development/Repositories/pizza/scss/template.scss */
 body {
-  font-family: "Lato", Helvetica, sans-serif; 
-}
+  font-family: "Lato", Helvetica, sans-serif; }
+
+#content h1 {
+  text-align: center; }
+
+@media (min-width: 576px) {
+  #content {
+    padding: 30px;
+    line-height: 160%; } }
 
 /*# sourceMappingURL=style.css.map */
