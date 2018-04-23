@@ -3,7 +3,8 @@
 /* RGB */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
 body {
-  font-family: "Lato", Helvetica, sans-serif; }
+  font-family: "Lato", Helvetica, sans-serif;
+  background-color: #f49f0a; }
 
 #content h1 {
   text-align: center; }
