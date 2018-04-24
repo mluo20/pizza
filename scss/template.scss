@@ -1,20 +1,123 @@
 @import '_palette.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
 
 $font: 'Lato', Helvetica, sans-serif;
 
+@mixin circle-maker($percent) {
+    position: relative;
+    border-radius: 50%;
+    width: $percent;
+    height: auto;
+    padding-top: $percent;
+}
+
 body {
-    font-family: $font;
+    font-family: "Lato", Helvetica, sans-serif;
     background-color: $color5;
+}
+
+#header h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#content {
+    position: relative;
+    background-color: white;
 }
 
 #content h1 {
     text-align: center;
 }
 
+#pizza {
+    margin-bottom: 32%;
+}
+
+.hovergreen {
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#crust {
+    margin: 0 auto;
+    @include circle-maker(60%);
+    background-color: #B08143;
+}
+
+#tomato {
+    margin: 0 auto;
+    @include circle-maker(55%);
+    margin-top: -57.5%;
+    background-color: $color1;
+    z-index: 2;
+}
+
+#cheese {
+    margin: 0 auto;
+    @include circle-maker(53%);
+    margin-top: -54%;
+    background-color: #efca08;
+    z-index: 3;
+}
+
+.topping {
+    position: relative;
+    @include circle-maker(10%);
+    background-color: #a6061c;
+    z-index: 4;
+}
+
+#toppings {
+    margin-left: 40%;
+    margin-top: -45%;
+}
+
+#toppings2 {
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+#toppings3 {
+    margin-left: 35%;
+    margin-top: -10%;
+}
+
+#toppings4 {
+    margin-left: 60%;
+    margin-top: -30%;
+}
+
+#toppings5 {
+    margin-left: 50%;
+    margin-top: -2%;
+}
+
+#toppings6 {
+    margin-left: 49%;
+    margin-top: 14%;
+}
+
+#toppings7 {
+    margin-left: 29%;
+    margin-top: -34%;
+}
+
+#footer {
+    position: relative;
+    background-color: $color3;
+    z-index: -10;
+}
+
 @media (min-width: 576px) {
     #content {
         padding: 30px;
         line-height: 160%;
+    }
+    #header {
+        background-image: url('../img/margtitle.png'), url('../img/margtitle.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 120px auto, 120px auto;
+        background-position: left center, right center;
     }
 }
